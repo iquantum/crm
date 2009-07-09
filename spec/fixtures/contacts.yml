@@ -1,0 +1,103 @@
+one:
+  first_name: MyString
+  middle_initial: MyString
+  last_name: MyString
+  prefix: MyString
+  name_preference: MyString
+  aka: MyString
+  status: 1
+  job_title: MyString
+  best_contact_method: 1
+  date_1: 2009-07-03 11:34:35
+  date_2: 2009-07-03 11:34:35
+  date_3: 2009-07-03 11:34:35
+  date_4: 2009-07-03 11:34:35
+  company: 1
+  division: 1
+  manager: 1
+  sponsor: 1
+  allergies_diet_restrictions: MyText
+  notes: MyText
+  bus_email: MyString
+  bus_phone: MyString
+  bus_phone_home_office: MyString
+  bus_phone_alt: MyString
+  bus_website: MyString
+  bus_fax: MyString
+  bus_cell: MyString
+  bus_phone_intl: MyString
+  bus_pager: MyString
+  bus_address_1: MyString
+  bus_address_2: MyString
+  bus_address_3: MyString
+  bus_city: MyString
+  bus_state: 1
+  bus_postal_code: MyString
+  bus_country: 1
+  bus_alt_billing_address: MyString
+  bus_assistant_first_name: MyString
+  bus_assistant_last_name: MyString
+  bus_assistant_email: MyString
+  bus_assistant_phone: MyString
+  bus_assistant_fax: MyString
+  per_email: MyString
+  per_address: MyString
+  per_city: MyString
+  per_state: 1
+  per_postal_code: MyString
+  per_country: 1
+  per_birthday: 2009-07-03 11:34:35
+  created_at: 2009-07-03 11:34:35
+  updated_at: 2009-07-03 11:34:35
+
+two:
+  first_name: MyString
+  middle_initial: MyString
+  last_name: MyString
+  prefix: MyString
+  name_preference: MyString
+  aka: MyString
+  status: 1
+  job_title: MyString
+  best_contact_method: 1
+  date_1: 2009-07-03 11:34:35
+  date_2: 2009-07-03 11:34:35
+  date_3: 2009-07-03 11:34:35
+  date_4: 2009-07-03 11:34:35
+  company: 1
+  division: 1
+  manager: 1
+  sponsor: 1
+  allergies_diet_restrictions: MyText
+  notes: MyText
+  bus_email: MyString
+  bus_phone: MyString
+  bus_phone_home_office: MyString
+  bus_phone_alt: MyString
+  bus_website: MyString
+  bus_fax: MyString
+  bus_cell: MyString
+  bus_phone_intl: MyString
+  bus_pager: MyString
+  bus_address_1: MyString
+  bus_address_2: MyString
+  bus_address_3: MyString
+  bus_city: MyString
+  bus_state: 1
+  bus_postal_code: MyString
+  bus_country: 1
+  bus_alt_billing_address: MyString
+  bus_assistant_first_name: MyString
+  bus_assistant_last_name: MyString
+  bus_assistant_email: MyString
+  bus_assistant_phone: MyString
+  bus_assistant_fax: MyString
+  per_email: MyString
+  per_address: MyString
+  per_city: MyString
+  per_state: 1
+  per_postal_code: MyString
+  per_country: 1
+  per_birthday: 2009-07-03 11:34:35
+  created_at: 2009-07-03 11:34:35
+  updated_at: 2009-07-03 11:34:35

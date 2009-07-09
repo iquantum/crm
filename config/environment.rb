@@ -36,7 +36,8 @@ Rails::Initializer.run do |config|
   config.gem 'rspec-rails', :lib => false, :version => '>= 1.2.0'
   config.gem 'thoughtbot-factory_girl', :lib => 'factory_girl', :source => 'http://gems.github.com'
   config.gem 'searchlogic'
-  
+  config.gem 'innetra-easy_navigation', :lib => 'easy_navigation', :source => 'http://gems.github.com'
+
   # These cause problems with irb. Left in for reference
   # config.gem 'rspec-rails', :lib => 'spec/rails', :version => '1.1.11'
   # config.gem 'rspec', :lib => 'spec', :version => '1.1.11'

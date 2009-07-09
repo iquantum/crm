@@ -1,0 +1,207 @@
+  <%= f.error_messages %>
+	<table class="tableData">
+  	<tr>
+			<td><%= f.label :first_name %></td>
+			<td><%= f.text_field :first_name %></td>
+			<td><%= f.label :last_name %></td>
+			<td><%= f.text_field :last_name %></td>
+			<td><%= f.label :middle_initial %></td>
+			<td><%= f.text_field :middle_initial, :class => "inputSmall" %></td>
+		</tr>
+		<tr>
+			<td><%= f.label :prefix %></td>
+			<td><%= f.text_field :prefix %></td>
+			<td><%= f.label :name_preference %></td>
+			<td><%= f.text_field :name_preference %></td>
+			<td><%= f.label :aka %></td>
+			<td><%= f.text_field :aka %></td>
+		</tr>
+		<tr>
+			<td><%= f.label :status %></td>
+			<td>
+				<% @selected = :status %>
+				
+				<select name="f[status]">
+				
+				<%= options_from_collection_for_select(ContactStatus.find(:all), :id, :value, @selected) %>
+				
+				</select>
+			</td>
+			<td><%= f.label :job_title %></td>
+			<td><%= f.text_field :job_title %></td>
+			<td><%= f.label :best_contact_method %></td>
+			<td><%= f.text_field :best_contact_method %></td>
+		</tr>
+  </table>
+  <script type="text/javascript">
+		$("td:even").addClass("even");
+		$("td:odd").addClass("odd");
+	</script>
+	
+	<%= f.text_field :status %>
+	
+  <p>
+    <%= f.label :date_1 %><br />
+    <%= f.datetime_select :date_1 %>
+  </p>
+  <p>
+    <%= f.label :date_2 %><br />
+    <%= f.datetime_select :date_2 %>
+  </p>
+  <p>
+    <%= f.label :date_3 %><br />
+    <%= f.datetime_select :date_3 %>
+  </p>
+  <p>
+    <%= f.label :date_4 %><br />
+    <%= f.datetime_select :date_4 %>
+  </p>
+  <p>
+    <%= f.label :company %><br />
+    <%= f.text_field :company %>
+  </p>
+  <p>
+    <%= f.label :division %><br />
+    <%= f.text_field :division %>
+  </p>
+  <p>
+    <%= f.label :manager %><br />
+    <%= f.text_field :manager %>
+  </p>
+  <p>
+    <%= f.label :sponsor %><br />
+    <%= f.text_field :sponsor %>
+  </p>
+  <p>
+    <%= f.label :allergies_diet_restrictions %><br />
+    <%= f.text_area :allergies_diet_restrictions %>
+  </p>
+  <p>
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </p>
+  <p>
+    <%= f.label :bus_email %><br />
+    <%= f.text_field :bus_email %>
+  </p>
+  <p>
+    <%= f.label :bus_phone %><br />
+    <%= f.text_field :bus_phone %>
+  </p>
+  <p>
+    <%= f.label :bus_phone_home_office %><br />
+    <%= f.text_field :bus_phone_home_office %>
+  </p>
+  <p>
+    <%= f.label :bus_phone_alt %><br />
+    <%= f.text_field :bus_phone_alt %>
+  </p>
+  <p>
+    <%= f.label :bus_website %><br />
+    <%= f.text_field :bus_website %>
+  </p>
+  <p>
+    <%= f.label :bus_fax %><br />
+    <%= f.text_field :bus_fax %>
+  </p>
+  <p>
+    <%= f.label :bus_cell %><br />
+    <%= f.text_field :bus_cell %>
+  </p>
+  <p>
+    <%= f.label :bus_phone_intl %><br />
+    <%= f.text_field :bus_phone_intl %>
+  </p>
+  <p>
+    <%= f.label :bus_pager %><br />
+    <%= f.text_field :bus_pager %>
+  </p>
+  <p>
+    <%= f.label :bus_address_1 %><br />
+    <%= f.text_field :bus_address_1 %>
+  </p>
+  <p>
+    <%= f.label :bus_address_2 %><br />
+    <%= f.text_field :bus_address_2 %>
+  </p>
+  <p>
+    <%= f.label :bus_address_3 %><br />
+    <%= f.text_field :bus_address_3 %>
+  </p>
+  <p>
+    <%= f.label :bus_city %><br />
+    <%= f.text_field :bus_city %>
+  </p>
+  <p>
+    <%= f.label :bus_state %><br />
+    <%= f.text_field :bus_state %>
+  </p>
+  <p>
+    <%= f.label :bus_postal_code %><br />
+    <%= f.text_field :bus_postal_code %>
+  </p>
+  <p>
+    <%= f.label :bus_country %><br />
+    <%= f.text_field :bus_country %>
+  </p>
+  <p>
+    <%= f.label :bus_alt_billing_address %><br />
+    <%= f.text_field :bus_alt_billing_address %>
+  </p>
+  <p>
+    <%= f.label :bus_assistant_first_name %><br />
+    <%= f.text_field :bus_assistant_first_name %>
+  </p>
+  <p>
+    <%= f.label :bus_assistant_last_name %><br />
+    <%= f.text_field :bus_assistant_last_name %>
+  </p>
+  <p>
+    <%= f.label :bus_assistant_email %><br />
+    <%= f.text_field :bus_assistant_email %>
+  </p>
+  <p>
+    <%= f.label :bus_assistant_phone %><br />
+    <%= f.text_field :bus_assistant_phone %>
+  </p>
+  <p>
+    <%= f.label :bus_assistant_fax %><br />
+    <%= f.text_field :bus_assistant_fax %>
+  </p>
+  <p>
+    <%= f.label :per_email %><br />
+    <%= f.text_field :per_email %>
+  </p>
+  <p>
+    <%= f.label :per_address %><br />
+    <%= f.text_field :per_address %>
+  </p>
+  <p>
+    <%= f.label :per_city %><br />
+    <%= f.text_field :per_city %>
+  </p>
+  <p>
+    <%= f.label :per_state %><br />
+    <%= f.text_field :per_state %>
+  </p>
+  <p>
+    <%= f.label :per_postal_code %><br />
+    <%= f.text_field :per_postal_code %>
+  </p>
+  <p>
+    <%= f.label :per_country %><br />
+    <%= f.text_field :per_country %>
+  </p>
+  <p>
+    <%= f.label :per_birthday %><br />
+    <%= f.datetime_select :per_birthday %>
+  </p>
+  <p>
+    <%= f.label :created_at %><br />
+    <%= f.datetime_select :created_at %>
+  </p>
+  <p>
+    <%= f.label :updated_at %><br />
+    <%= f.datetime_select :updated_at %>
+  </p>
+

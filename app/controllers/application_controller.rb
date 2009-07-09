@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   filter_parameter_logging :password, :password_confirmation
   rescue_from ActiveRecord::RecordNotFound, :with => :record_not_found
-
+  
   protected
 
   # Automatically respond with 404 for ActiveRecord::RecordNotFound

@@ -1,0 +1,37 @@
+<% title "Contacts" %>
+
+<ul class="sf-menu">
+	<li ><%= link_to 'Create New Contact', new_contact_path %></li>
+</ul>
+
+<br><br>
+<h3><%= @page_title %></h3>
+<br>
+
+<%= flash_messages %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Job Title</th>
+    <th>Company</th>
+    <th>Division</th>
+    <th>Best Contact</th>
+    <th>Phone</th>
+    <th>E-mail</th>
+  </tr>
+  <% for contact in @contacts %>
+    <tr>
+      <td><%= link_to contact.first_name + " " + contact.middle_initial + " " + contact.last_name, contact %></td>
+      <td><%= link_to contact.job_title, contact %></td>
+      <td><%= link_to contact.company, contact %></td>
+      <td><%= link_to contact.division, contact %></td>
+      <td><%= link_to contact.best_contact_method, contact %></td>
+      <td><%= link_to contact.bus_phone, contact %></td>
+      <td><%= link_to contact.bus_email, contact %></td>
+      <!--><td><%= link_to "Show", contact %></td>
+      <td><%= link_to "Edit", edit_contact_path(contact) %></td>
+      <td><%= link_to "Destroy", contact, :confirm => 'Are you sure?', :method => :delete %></td>-->
+    </tr>
+  <% end %>
+</table>

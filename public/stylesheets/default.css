@@ -1,0 +1,163 @@
+/* standard elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #F70;
+}
+.tableData {
+	padding: 0px 0px 0px 0px;
+}
+.tableAdminKeywords {
+	padding: 10px 100px 10px 50px;
+}
+.tableAdminKeywords td {
+    padding: 5px;
+}
+.th {
+	font: bold 62.5%;
+}
+td.even {
+	text-align: right;
+	width: 100px;
+	padding: 3px;
+	color: #466;
+	font: normal 62.5%;
+}
+
+td.odd {
+	text-align: left;
+	width: 100px;
+	padding: 3px;
+	font: normal 62.5%;
+}
+a:hover {
+	color: #C60;
+}
+body {
+	background: #0094D6 url(/images/bg.gif) repeat-x;
+	color: #466;
+	font: normal 62.5% "Lucida Sans Unicode",sans-serif;
+	margin: 0;
+}
+.inputSmall {
+	width: 20px;
+}
+input {
+	width: 150px;
+}
+select {
+	color: #555;
+	font: normal 1.1em "Lucida Sans Unicode",sans-serif;
+}
+p,cite,code,ul {
+	font-size: 1.2em;
+	padding-bottom: 1.2em;
+}
+h1 {
+	font-size: 1.4em;
+	margin-bottom: 3px;
+	font: "Lucida Sans Unicode",sans-serif;
+}
+code {
+	background: url(/images/bgcode.gif);
+	border: 1px solid #F0F0F0;
+	border-left: 6px solid #39F;
+	color: #555;
+	display: block;
+	font: normal 1.1em "Lucida Sans Unicode",serif;
+	margin-bottom: 12px;
+	padding: 8px 10px;
+	white-space: pre;
+}
+cite {
+	background: url(/images/quote.gif) no-repeat;
+	color: #666;
+	display: block;
+	font: normal 1.3em "Lucida Sans Unicode",serif;
+	padding-left: 28px;
+}
+
+/* misc */
+.clearer {
+	clear: both;
+}
+
+/* structure */
+.topcontainer {
+	background: #CCCCCC url(/images/topleft.gif);
+	color: #000;
+}
+
+.header {
+	height: 24px;
+}
+
+/* title */
+.title {
+	float: left;
+	padding: 5px 0 0 5px;
+}
+.title h1 {
+	color: #FFF;
+	font: normal 1.7em "Lucida Sans Unicode",sans-serif;
+}
+
+.boxBlackNoSize {
+	BORDER-RIGHT: 1px solid #666666;
+	BORDER-TOP: 1px solid #666666;
+	BORDER-LEFT: 1px solid #666666;
+	BORDER-BOTTOM: 1px solid #666666;
+	padding-bottom : 6px;
+	padding-left : 6px;
+	padding-right : 6px;
+	padding-top : 6px;
+}
+
+.boxBlack {
+	BORDER-RIGHT: 1px solid #666666;
+	BORDER-TOP: 1px solid #666666;
+	BORDER-LEFT: 1px solid #666666;
+	BORDER-BOTTOM: 1px solid #666666;
+	padding-bottom : 6px;
+	padding-left : 6px;
+	padding-right : 6px;
+	padding-top : 6px;
+	width : 780px;
+}
+
+/* main */
+.main {
+	background: #FFF url(/images/bgmain.gif)  no-repeat;
+	clear: both;
+	padding: 0px 12px 0 52px;
+}
+
+/* search form */
+.styled {
+	border: 3px double #E5E5E5;
+	padding: 2px 3px;
+}
+.button {
+	border: 1px solid #AAA;
+	margin-left: 5px;
+	padding: 2px 3px;
+}
+
+/* footer */
+.footer {
+	background: #0094D6 url(/images/bgfooter.gif) repeat-x;
+	color: #C1DEF0;
+	font-size: 1.1em;
+	line-height: 25px;
+	text-align: center;
+}
+.footer a {
+	color: #FFF;
+	text-decoration: none;
+}
+.footer a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}

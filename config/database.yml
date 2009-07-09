@@ -1,59 +1,21 @@
-development:
-  # Sqlite Settings
-  adapter: sqlite3
-  database: db/development.sqlite3
-  pool: 5
-  timeout: 5000
-
+development:  &default_settings
   # Mysql Settings
-  # adapter: mysql
-  # encoding: utf8
-  # database: bort_development
-  # username: root
-  # password:
-  # pool: 5
+  adapter: mysql
+  encoding: utf8
+  database: contacts_development
+  username: root
+  password: leopard01
+  socket: /tmp/mysql.sock
+  pool: 5
   
 test:
-  # Sqlite Settings
-  adapter: sqlite3
-  database: db/test.sqlite3
-  pool: 5
-  timeout: 5000
-
-  # Mysql Settings
-  # adapter: mysql
-  # encoding: utf8
-  # database: bort_test
-  # username: root
-  # password:
-  # pool: 5
+  <<: *default_settings
+  database: contacts_test
   
 staging:
-  # Sqlite Settings
-  adapter: sqlite3
-  database: db/staging.sqlite3
-  pool: 5
-  timeout: 5000
-
-  # Mysql Settings
-  # adapter: mysql
-  # encoding: utf8
-  # database: bort_staging
-  # username: root
-  # password:
-  # pool: 5
+  <<: *default_settings
+  database: contacts_staging
   
 production:
-  # Sqlite Settings
-  adapter: sqlite3
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000
-
-  # Mysql Settings
-  # adapter: mysql
-  # encoding: utf8
-  # database: bort_production
-  # username: root
-  # password:
-  # pool: 5
+  <<: *default_settings
+  database: contacts_production

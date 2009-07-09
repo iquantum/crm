@@ -1,0 +1,28 @@
+<div id="content">
+
+	<% form_for @contact_status, :html => {:name => 'contact_status'} do |f| %>
+		<ul class="sf-menu">
+			<li><%= link_to 'Edit', edit_contact_status_path(@contact_status) %></li>
+			<li ><%= link_to 'Back', contact_statuses_path %></li>
+		</ul>
+
+		<br><br>
+		<h3><%= @page_title %></h3>
+		<br>
+
+		<%= flash_messages %>
+		
+		<table class="tableData">
+	  	<tr>
+				<td><%= f.label :value %></td>
+				<td><%=h @contact_status.value %></td>
+			</tr>
+	  </table>
+	  <script type="text/javascript">
+			$("td:even").addClass("even");
+			$("td:odd").addClass("odd");
+		</script>
+		<br>
+	<% end %>
+	<%= yield :layout %>
+</div>

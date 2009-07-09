@@ -1,0 +1,215 @@
+<div id="content">
+	
+		<ul class="sf-menu">
+			<li><%= link_to "Edit", edit_contact_path(@contact) %></li>
+		</ul>
+
+		<br><br>
+		<h3><%= @page_title %></h3>
+		<br>
+	
+		<%= flash_messages %>
+
+<p>
+  <strong>First Name:</strong>
+  <%=h @contact.first_name %>
+</p>
+<p>
+  <strong>Middle Initial:</strong>
+  <%=h @contact.middle_initial %>
+</p>
+<p>
+  <strong>Last Name:</strong>
+  <%=h @contact.last_name %>
+</p>
+<p>
+  <strong>Prefix:</strong>
+  <%=h @contact.prefix %>
+</p>
+<p>
+  <strong>Name Preference:</strong>
+  <%=h @contact.name_preference %>
+</p>
+<p>
+  <strong>Aka:</strong>
+  <%=h @contact.aka %>
+</p>
+<p>
+  <strong>Status:</strong>
+  <%=h @contact.status %>
+</p>
+<p>
+  <strong>Job Title:</strong>
+  <%=h @contact.job_title %>
+</p>
+<p>
+  <strong>Best Contact Method:</strong>
+  <%=h @contact.best_contact_method %>
+</p>
+<p>
+  <strong>Date 1:</strong>
+  <%=h @contact.date_1 %>
+</p>
+<p>
+  <strong>Date 2:</strong>
+  <%=h @contact.date_2 %>
+</p>
+<p>
+  <strong>Date 3:</strong>
+  <%=h @contact.date_3 %>
+</p>
+<p>
+  <strong>Date 4:</strong>
+  <%=h @contact.date_4 %>
+</p>
+<p>
+  <strong>Company:</strong>
+  <%=h @contact.company %>
+</p>
+<p>
+  <strong>Division:</strong>
+  <%=h @contact.division %>
+</p>
+<p>
+  <strong>Manager:</strong>
+  <%=h @contact.manager %>
+</p>
+<p>
+  <strong>Sponsor:</strong>
+  <%=h @contact.sponsor %>
+</p>
+<p>
+  <strong>Allergies Diet Restrictions:</strong>
+  <%=h @contact.allergies_diet_restrictions %>
+</p>
+<p>
+  <strong>Notes:</strong>
+  <%=h @contact.notes %>
+</p>
+<p>
+  <strong>Bus Email:</strong>
+  <%=h @contact.bus_email %>
+</p>
+<p>
+  <strong>Bus Phone:</strong>
+  <%=h @contact.bus_phone %>
+</p>
+<p>
+  <strong>Bus Phone Home Office:</strong>
+  <%=h @contact.bus_phone_home_office %>
+</p>
+<p>
+  <strong>Bus Phone Alt:</strong>
+  <%=h @contact.bus_phone_alt %>
+</p>
+<p>
+  <strong>Bus Website:</strong>
+  <%=h @contact.bus_website %>
+</p>
+<p>
+  <strong>Bus Fax:</strong>
+  <%=h @contact.bus_fax %>
+</p>
+<p>
+  <strong>Bus Cell:</strong>
+  <%=h @contact.bus_cell %>
+</p>
+<p>
+  <strong>Bus Phone Intl:</strong>
+  <%=h @contact.bus_phone_intl %>
+</p>
+<p>
+  <strong>Bus Pager:</strong>
+  <%=h @contact.bus_pager %>
+</p>
+<p>
+  <strong>Bus Address 1:</strong>
+  <%=h @contact.bus_address_1 %>
+</p>
+<p>
+  <strong>Bus Address 2:</strong>
+  <%=h @contact.bus_address_2 %>
+</p>
+<p>
+  <strong>Bus Address 3:</strong>
+  <%=h @contact.bus_address_3 %>
+</p>
+<p>
+  <strong>Bus City:</strong>
+  <%=h @contact.bus_city %>
+</p>
+<p>
+  <strong>Bus State:</strong>
+  <%=h @contact.bus_state %>
+</p>
+<p>
+  <strong>Bus Postal Code:</strong>
+  <%=h @contact.bus_postal_code %>
+</p>
+<p>
+  <strong>Bus Country:</strong>
+  <%=h @contact.bus_country %>
+</p>
+<p>
+  <strong>Bus Alt Billing Address:</strong>
+  <%=h @contact.bus_alt_billing_address %>
+</p>
+<p>
+  <strong>Bus Assistant First Name:</strong>
+  <%=h @contact.bus_assistant_first_name %>
+</p>
+<p>
+  <strong>Bus Assistant Last Name:</strong>
+  <%=h @contact.bus_assistant_last_name %>
+</p>
+<p>
+  <strong>Bus Assistant Email:</strong>
+  <%=h @contact.bus_assistant_email %>
+</p>
+<p>
+  <strong>Bus Assistant Phone:</strong>
+  <%=h @contact.bus_assistant_phone %>
+</p>
+<p>
+  <strong>Bus Assistant Fax:</strong>
+  <%=h @contact.bus_assistant_fax %>
+</p>
+<p>
+  <strong>Per Email:</strong>
+  <%=h @contact.per_email %>
+</p>
+<p>
+  <strong>Per Address:</strong>
+  <%=h @contact.per_address %>
+</p>
+<p>
+  <strong>Per City:</strong>
+  <%=h @contact.per_city %>
+</p>
+<p>
+  <strong>Per State:</strong>
+  <%=h @contact.per_state %>
+</p>
+<p>
+  <strong>Per Postal Code:</strong>
+  <%=h @contact.per_postal_code %>
+</p>
+<p>
+  <strong>Per Country:</strong>
+  <%=h @contact.per_country %>
+</p>
+<p>
+  <strong>Per Birthday:</strong>
+  <%=h @contact.per_birthday %>
+</p>
+<p>
+  <strong>Created At:</strong>
+  <%=h @contact.created_at %>
+</p>
+<p>
+  <strong>Updated At:</strong>
+  <%=h @contact.updated_at %>
+</p>
+
+	<%= yield :layout %>
+</div>

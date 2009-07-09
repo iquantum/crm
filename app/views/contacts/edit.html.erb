@@ -1,0 +1,25 @@
+<div id="content">
+	
+	<% form_for @contact, :html => {:name => 'contact'} do |f| %>
+		<ul class="sf-menu">
+			<li><%= @save = link_to_function "Save", "contact.submit()" %></li>
+			<li><%= link_to "Delete", :controller => "contacts", :action => "destroy", :id => @contact %></li>
+			<li><%= link_to 'Cancel', contacts_path %></li>
+			<li><%= link_to 'Send Email', contacts_path %></li>
+			<li><%= link_to 'Log Call', contacts_path %></li>
+			<li><%= link_to 'Add Note', contacts_path %></li>
+			<li><%= link_to 'View Financial', contacts_path %></li>
+			<li><%= link_to 'Change Company', contacts_path %></li>
+		</ul>
+
+		<br><br>
+		<h3><%= @page_title %></h3>
+		<br>
+	
+		<%= flash_messages %>
+	
+		<%= render :partial => 'form', :locals => {:f => f} %>
+	
+	<% end %>
+	<%= yield :layout %>
+</div>

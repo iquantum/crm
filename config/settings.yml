@@ -1,17 +1,15 @@
 development: &non_production_settings
   site_url: http://localhost:3000
-  site_name: Bort
-  admin_email: bort@bort.com
+  site_name: WOMEN Unlimited CRM
+  admin_email: dclemente@iquantum.com
   
 test:
   <<: *non_production_settings
 
 staging:
-  site_url: http://staging.example.com
-  site_name: Bort
-  admin_email: bort@bort.com  
+  <<: *non_production_settings
+  site_url: http://crm.women-unlimited.com
   
 production:
-  site_url: http://www.example.com
-  site_name: Bort
-  admin_email: bort@bort.com
+  <<: *non_production_settings
+  site_url: http://crm.women-unlimited.com
